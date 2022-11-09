@@ -1,0 +1,59 @@
+{
+  "name": "courier-nasa-apod",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "main": "",
+  "type": "module",
+  "scripts": {
+    "dev": "node --no-warnings src/main.js",
+    "lint": "eslint . ; exit 0"
+  },
+  "dependencies": {
+    "@trycourier/courier": "^4.1.0",
+    "dotenv": "^16.0.3",
+    "node-cron": "^3.0.2",
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
+  },
+  "nodemonConfig": {
+    "events": {
+      "start": "cls || clear"
+    },
+    "ignore": [
+      "node_modules/*"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "airbnb-base",
+      "plugin:prettier/recommended",
+      "plugin:import/warnings"
+    ],
+    "plugins": [
+      "prettier",
+      "security",
+      "import"
+    ],
+    "rules": {
+      "prettier/prettier": "error"
+    }
+  },
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "semi": true
+  }
+}
