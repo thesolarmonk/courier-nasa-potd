@@ -1,4 +1,4 @@
-# Courier API | NASA - Image of the Day
+# Courier API  |  NASA - Image of the Day
 
 Install packages:
 
